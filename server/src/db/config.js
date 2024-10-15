@@ -1,5 +1,5 @@
 // add your database connection here
-const { Sequelize, DataTypes, Model } = require("sequelize"); // importing from sequelize
+const { Sequelize, DataTypes } = require("sequelize"); // importing from sequelize
 const path = require("path");
 
 const db = new Sequelize({
@@ -10,6 +10,5 @@ const db = new Sequelize({
 
 module.exports = {
     db,
-    DataTypes, 
-    Model
+    DataTypes 
 };
